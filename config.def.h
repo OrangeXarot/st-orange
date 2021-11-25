@@ -94,28 +94,52 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.8;
+float alpha = 0.85;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	/* 8 normal colors */
+	/* OLD 8 normal colors 
 	"black",
 	"red3",
 	"green3",
 	"yellow3",
 	"blue2",
 	"magenta3",
-	"#dd4500",
+	"cyan3",
 	"gray90",
 
-	/* 8 bright colors */
+	 8 bright colors 
 	"gray50",
 	"red",
 	"green",
 	"yellow",
 	"#5c5cff",
 	"magenta",
-	"#ff4f00",
+	"cyan",
+	"white",*/
+
+	
+  /* 8 normal colors */
+	"black",
+	"#730B16",
+	"#009942",
+	"yellow3",
+	"#993000",
+	"#6B0064",
+	"#255880",
+	"gray90",
+
+
+
+	
+  /* 8 bright colors */
+	"gray50",
+	"#D91629",
+	"#00FF6E",
+	"yellow",
+	"#FF4F00",
+	"#D100C3",
+	"#4AB1FF",
 	"white",
 
 	[255] = 0,
@@ -143,7 +167,7 @@ static unsigned int defaultrcs = 257;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 4;
 
 /*
  * Default columns and rows numbers
